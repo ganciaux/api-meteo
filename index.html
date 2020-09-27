@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>API Météo</title>
+  </head>
+  <body>
+  	<h2>API www.prevision-meteo.ch</h2>
+  	<span>Choisir une ville: </span>
+  	<select id="city" name="city">
+  		<option value="Paris">Paris</option>
+  		<option value="Marseille">Marseille</option>
+  		<option value="Lyon">Lyon</option>
+  	</select>
+  	<button id="btnAJAX" type="button" name="AJAX" onclick="requeteAJAX()">chercher</button>
+  	<button id="btnReset" type="button" name="Reset" onclick="reset()">effacer</button>
+  	<br><br>
+  	<div>Résultat:</div>
+  	<div>
+  		<span>Pays:</span>
+  		<span id="country"></span>
+  	</div>
+  	<div>
+  		<span>Ville:</span>
+  		<span id="name"></span>
+  	</div>
+  	<div>
+  		<span>latitude:</span>
+  		<span id="latitude"></span>
+  	</div>
+  	<div>
+  		<span>longitude:</span>
+  		<span id="longitude"></span>
+  	</div>
+  	<div>
+  		<span>date:</span>
+  		<span id="date"></span>
+  	</div>
+  	<div>
+  		<span>temperatures:</span>
+  		<span id="temperature"></span>
+  	</div>
+  </body>
+  <script src="./meteo.js"></script>
+</html>
